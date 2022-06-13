@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+  --primary: #0290ff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  padding: 2% 5%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid grey;
+}
+
+.app-logo {
+  width: 4vw;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+header h1 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.active {
+  text-decoration: underline;
+}
