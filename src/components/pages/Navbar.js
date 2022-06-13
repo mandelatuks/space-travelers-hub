@@ -6,7 +6,7 @@ import './page.css';
 const Navbar = () => (
   <header>
     <h1>
-      <img src={logo} className="App-logo" alt="logo" />
+      <img src={logo} className="app-logo" alt="logo" />
       {' '}
       Space Traveler&#39;s Hub
     </h1>
@@ -14,7 +14,7 @@ const Navbar = () => (
       <ul>
         <li>
           <NavLink to="/">
-            Rocket
+            Rockets
           </NavLink>
         </li>
         <li>
