@@ -9,6 +9,7 @@ const Rocket = () => {
       <div className="detail1">
         <img className="image-detail" src={img} alt="image1" />
         <p className="text-dumy">
+          <h3> falcon 1</h3>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry standard dummy text ever
           since the 1500s,
@@ -27,6 +28,7 @@ const Rocket = () => {
       <div className="detail2">
         <img className="image-detail" src={img} alt="image1" />
         <p className="text-dumy">
+          <h3> falcon heavy</h3>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry standard dummy text ever
           since the 1500s,

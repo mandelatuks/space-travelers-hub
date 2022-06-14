@@ -1,9 +1,16 @@
 .rocket-detail {
   padding-top: 2%;
+  padding-left: 20px;
+  padding-right: 30px;
 }
 
 .image-detail {
   width: 300px;
+}
+
+h3{
+ font-size: 18px;
+  font-weight: bold;
 }
 
 .detail1 {
