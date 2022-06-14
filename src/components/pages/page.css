@@ -120,10 +120,12 @@ td:nth-child(4) {
   background-color: grey;
   color: white;
   padding: 0;
+  border-radius: 4px;
 }
 
 .member {
   background-color: hsl(180deg 53% 39%);
   color: white;
   padding: 0;
+  border-radius: 4px;
 }

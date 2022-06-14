@@ -26,6 +26,11 @@ class MissionPage extends React.Component {
           mission_name: 'Commercial Resupply',
           description: 'The HolyBible',
         },
+        {
+          mission_id: 5,
+          mission_name: 'Mandela"s superwave',
+          description: 'Mission to save africa from ourselves',
+        },
       ],
     };
   }
