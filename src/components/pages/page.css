@@ -98,3 +98,8 @@ table {
     border-radius: 5px;
     cursor: pointer;
 }
+
+.non-member {
+    background-color: grey;
+    color:white;
+}
