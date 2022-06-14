@@ -2,6 +2,7 @@
 
 :root {
   --primary: #0290ff;
+  --secondary: rgba(221,221,221, 0.6);
 }
 
 * {
@@ -56,28 +57,44 @@ header h1 {
   padding: 2%;
 }
 
-.missiontable {
-    display: flex;
-    justify-content: center;
-    padding: 1%;
-}
-
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 98%;
-    padding: 2%;
+    width: 100%;
   }
   
   td, th {
-    border: 1px solid #dddddd;
+    border: 2px solid #dddddd;
     text-align: left;
     padding: 8px;
   }
-  
-  thead,
-  tr:nth-child(even) {
-    background-color: #dddddd;
+
+  tbody tr:nth-child(odd) {
+    background-color: var(--secondary);
   }
 
- 
+.missiontable {
+    display: flex;
+    width:98%;
+    padding:2%;
+}
+
+.join-btn {
+    border: 1px solid grey;
+    background-color: transparent;
+    color:grey;
+    font-weight: bold;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    border: 1px solid rgb(255, 122, 135);
+    background-color: transparent;
+    color:rgb(255, 122, 135);
+    font-weight: bold;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
