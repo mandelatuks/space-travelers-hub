@@ -18,13 +18,13 @@ const Navbar = () => (
           </NavLink>
         </li>
         <li>
-          <NavLink to="MissionPage">
+          <NavLink to="mission">
             Missions
           </NavLink>
         </li>
         <li>|</li>
         <li>
-          <NavLink to="ProfilePage">
+          <NavLink to="my-profile">
             My Profile
           </NavLink>
         </li>
