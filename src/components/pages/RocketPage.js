@@ -1,7 +1,13 @@
-function RocketPage() {
+import Rocket from '../Rocket';
+
+const RocketPage = () => {
+  const d = '';
   return (
-    <h1>Rocket</h1>
+    <>
+      <h2>{d}</h2>
+      <Rocket />
+    </>
   );
-}
+};
 
 export default RocketPage;
