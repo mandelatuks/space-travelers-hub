@@ -21,7 +21,7 @@ class Mission extends React.PureComponent {
                 <td><h4>{mission.mission_name}</h4></td>
                 <td><h4>{mission.description}</h4></td>
                 <td><h4 className="non-member">Not a Member</h4></td>
-                <td><button type="button" className="cancel-btn">Join Mission</button></td>
+                <td><button type="button" className="join-btn">Join Mission</button></td>
               </tr>
             ))}
           </tbody>

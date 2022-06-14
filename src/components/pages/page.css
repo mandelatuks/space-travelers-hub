@@ -67,10 +67,26 @@ table {
     border: 2px solid #dddddd;
     text-align: left;
     padding: 8px;
+    overflow: hidden;
+  }
+
+  td {
+    padding-bottom: 2rem;
+    font-weight: 300;
   }
 
   tbody tr:nth-child(odd) {
     background-color: var(--secondary);
+  }
+
+  td:nth-child(2){
+    width: auto;
+  }
+
+  td:nth-child(1),
+  td:nth-child(3),
+  td:nth-child(4){
+    width: 9rem;
   }
 
 .missiontable {
@@ -102,4 +118,11 @@ table {
 .non-member {
     background-color: grey;
     color:white;
+    padding: 0;
+}
+
+.member {
+    background-color: hsl(180deg 53% 39%);
+    color:white;
+    padding: 0;
 }
