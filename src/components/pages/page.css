@@ -2,7 +2,7 @@
 
 :root {
   --primary: #0290ff;
-  --secondary: rgba(221,221,221, 0.6);
+  --secondary: rgba(221, 221, 221, 0.6);
 }
 
 * {
@@ -58,71 +58,72 @@ header h1 {
 }
 
 table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  td, th {
-    border: 2px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    overflow: hidden;
-  }
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
-  td {
-    padding-bottom: 2rem;
-    font-weight: 300;
-  }
+td,
+th {
+  border: 2px solid #ddd;
+  text-align: left;
+  padding: 8px;
+  overflow: hidden;
+}
 
-  tbody tr:nth-child(odd) {
-    background-color: var(--secondary);
-  }
+td {
+  padding-bottom: 2rem;
+  font-weight: 300;
+}
 
-  td:nth-child(2){
-    width: auto;
-  }
+tbody tr:nth-child(odd) {
+  background-color: var(--secondary);
+}
 
-  td:nth-child(1),
-  td:nth-child(3),
-  td:nth-child(4){
-    width: 9rem;
-  }
+td:nth-child(2) {
+  width: auto;
+}
+
+td:nth-child(1),
+td:nth-child(3),
+td:nth-child(4) {
+  width: 9rem;
+}
 
 .missiontable {
-    display: flex;
-    width:98%;
-    padding:2%;
+  display: flex;
+  width: 98%;
+  padding: 2%;
 }
 
 .join-btn {
-    border: 1px solid grey;
-    background-color: transparent;
-    color:grey;
-    font-weight: bold;
-    padding: 0.3rem 0.5rem;
-    border-radius: 5px;
-    cursor: pointer;
+  border: 1px solid grey;
+  background-color: transparent;
+  color: grey;
+  font-weight: bold;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .cancel-btn {
-    border: 1px solid rgb(255, 122, 135);
-    background-color: transparent;
-    color:rgb(255, 122, 135);
-    font-weight: bold;
-    padding: 0.3rem 0.5rem;
-    border-radius: 5px;
-    cursor: pointer;
+  border: 1px solid rgb(255, 122, 135);
+  background-color: transparent;
+  color: rgb(255, 122, 135);
+  font-weight: bold;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .non-member {
-    background-color: grey;
-    color:white;
-    padding: 0;
+  background-color: grey;
+  color: white;
+  padding: 0;
 }
 
 .member {
-    background-color: hsl(180deg 53% 39%);
-    color:white;
-    padding: 0;
+  background-color: hsl(180deg 53% 39%);
+  color: white;
+  padding: 0;
 }
