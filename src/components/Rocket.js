@@ -1,51 +1,42 @@
+/* eslint-disable camelcase */
 import React from 'react';
-import './rocket.css';
-import img from './img1.jpg';
+import PropTypes from 'prop-types';
+// import './rocket.css';
 
-const Rocket = () => {
-  const val = '';
+const Rocket = ({ rocket }) => {
+  const {
+    rocket_description, rocket_name, rocket_img,
+  } = rocket;
   return (
-    <div className="rocket-detail">
-      <div className="detail1">
-        <img className="image-detail" src={img} alt="image1" />
-        <p className="text-dumy">
-          <h3> falcon 1</h3>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry standard dummy text ever
-          since the 1500s,
-          <br />
-          when an unknown printer took a galley of type and scrambled it to make
-          a type specimen book. It has survived not only five centuries, but
-          also the leap into electronic typesetting,
-          <br />
-          remaining essentially unchanged
-          {val}
-          <br />
-          <button type="button">Reserve</button>
-        </p>
-      </div>
+    <section>
+      <div>
+        <div>
+          <img
+            src={rocket_img}
+            alt={rocket_name}
+          />
+        </div>
 
-      <div className="detail2">
-        <img className="image-detail" src={img} alt="image1" />
-        <p className="text-dumy">
-          <h3> falcon heavy</h3>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry standard dummy text ever
-          since the 1500s,
-          <br />
-          when an unknown printer took a galley of type and scrambled it to make
-          a type specimen book. It has survived not only five centuries, but
-          also the leap into electronic typesetting,
-          <br />
-          remaining essentially unchanged
-          {val}
-          <br />
-          <button type="button">Reserve</button>
-        </p>
-        {/* <div className="button-type"></div> */}
+        <div>
+          <span>{rocket_name}</span>
+          <p>{rocket_description}</p>
+          <button type="button">
+            Reserve Rocket
+          </button>
+        </div>
       </div>
-    </div>
+    </section>
   );
+};
+
+Rocket.propTypes = {
+  rocket: PropTypes.shape({
+    rocket_id: PropTypes.number,
+    rocket_name: PropTypes.string,
+    rocket_description: PropTypes.string,
+    reserved: PropTypes.bool,
+    rocket_img: PropTypes.string,
+  }).isRequired,
 };
 
 export default Rocket;
