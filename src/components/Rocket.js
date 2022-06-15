@@ -5,27 +5,31 @@ import PropTypes from 'prop-types';
 
 const Rocket = ({ rocket }) => {
   const {
-    rocket_description, rocket_name, rocket_img,
+    rocket_name, description, flickr_images, reserved,
   } = rocket;
   return (
-    <section>
-      <div>
+    <div className="rocket-item">
+      <div className="rocket-item__image">
+        <img src={flickr_images} alt={rocket_name} />
+      </div>
+      <div className="rocket-item__info">
+        <h2 className="rocket-item__name">{rocket_name}</h2>
+        <p className="rocket-item__description">
+          <span className="status">{reserved ? 'Reserved' : ''}</span>
+          {description}
+        </p>
         <div>
-          <img
-            src={rocket_img}
-            alt={rocket_name}
-          />
-        </div>
-
-        <div>
-          <span>{rocket_name}</span>
-          <p>{rocket_description}</p>
-          <button type="button">
-            Reserve Rocket
+          <button
+            className="rocket-item__reserve-btn"
+            disabled={reserved}
+            onClick={() => console.log('reserve')}
+            type="button"
+          >
+            {reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
           </button>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
@@ -33,9 +37,9 @@ Rocket.propTypes = {
   rocket: PropTypes.shape({
     rocket_id: PropTypes.number,
     rocket_name: PropTypes.string,
-    rocket_description: PropTypes.string,
+    description: PropTypes.string,
     reserved: PropTypes.bool,
-    rocket_img: PropTypes.string,
+    flickr_images: PropTypes.string,
   }).isRequired,
 };
 

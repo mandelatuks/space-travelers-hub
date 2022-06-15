@@ -1,20 +1,16 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { FetchRockets } from '../../Redux/Rocket/rockets';
+import { fetchRockets } from '../../Redux/Rocket/rockets';
 import Rocket from '../Rocket';
 
 const RocketPage = () => {
-  const rockets = useSelector((state) => state.rocketsReducer);
+  const rockets = useSelector((state) => state.rockets.rockets);
   const dispatch = useDispatch();
-
   useEffect(() => {
-    dispatch(FetchRockets());
+    dispatch(fetchRockets());
   }, [dispatch]);
 
-  const data = rockets.map((rocket) => (
-    <Rocket key={rocket.rocket_id} rocket={rocket} />
-  ));
-  return <div className="rocketList">{data}</div>;
+  return rockets.map((rocket) => <Rocket key={rocket.id} rocket={rocket} />);
 };
 
 export default RocketPage;

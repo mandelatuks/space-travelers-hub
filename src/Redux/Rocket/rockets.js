@@ -1,35 +1,37 @@
-const ADD_ROCKET = 'space-travellers-hub/redux/rocket/ADD_TICKET';
+import { createSlice } from '@reduxjs/toolkit';
+import axios from 'axios';
 
-const initialState = [];
-const url = 'https://api.spacexdata.com/v3/rockets';
-
-export const addRocket = (rockets) => ({
-  type: ADD_ROCKET,
-  rockets,
+// slice
+const rocketsSlice = createSlice({
+  name: 'rockets',
+  initialState: {
+    rockets: [],
+    loading: false,
+    error: null,
+  },
+  reducers: {
+    rocketsSuccess: (state, action) => {
+      state.rockets = action.payload;
+      state.loading = false;
+    },
+    rocketsError: (state, action) => {
+      state.error = action.payload;
+    },
+  },
 });
 
-export const FetchRockets = () => async (dispatch) => {
-  const response = await fetch(url);
-  const info = await response.json();
-  const rocketsArray = [];
-  info.forEach((e) => {
-    const rocket = {
-      rocket_id: e.id,
-      rocket_name: e.rocket_name,
-      rocket_description: e.description,
-      rocket_img: e.flickr_images[0],
-      reserved: false,
-    };
-    rocketsArray.push(rocket);
-  });
-  dispatch(addRocket(rocketsArray));
-};
+export default rocketsSlice.reducer;
 
-const reducer = (state = initialState, action) => {
-  if (action.type === ADD_ROCKET) {
-    return [...action.rockets];
+export const {
+  rocketsSuccess,
+  rocketsError,
+} = rocketsSlice.actions;
+
+export const fetchRockets = () => async (dispatch) => {
+  try {
+    const rockets = await axios.get('https://api.spacexdata.com/v3/rockets');
+    dispatch(rocketsSuccess(rockets.data));
+  } catch (error) {
+    dispatch(rocketsError(error.message));
   }
-  return state;
 };
-
-export default reducer;
