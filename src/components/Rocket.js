@@ -1,51 +1,46 @@
+/* eslint-disable camelcase */
 import React from 'react';
-import './rocket.css';
-import img from './img1.jpg';
+import PropTypes from 'prop-types';
+// import './rocket.css';
 
-const Rocket = () => {
-  const val = '';
+const Rocket = ({ rocket }) => {
+  const {
+    rocket_name, description, flickr_images, reserved,
+  } = rocket;
   return (
-    <div className="rocket-detail">
-      <div className="detail1">
-        <img className="image-detail" src={img} alt="image1" />
-        <p className="text-dumy">
-          <h3> falcon 1</h3>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry standard dummy text ever
-          since the 1500s,
-          <br />
-          when an unknown printer took a galley of type and scrambled it to make
-          a type specimen book. It has survived not only five centuries, but
-          also the leap into electronic typesetting,
-          <br />
-          remaining essentially unchanged
-          {val}
-          <br />
-          <button type="button">Reserve</button>
-        </p>
+    <div className="rocket-item">
+      <div className="rocket-item__image">
+        <img src={flickr_images} alt={rocket_name} />
       </div>
-
-      <div className="detail2">
-        <img className="image-detail" src={img} alt="image1" />
-        <p className="text-dumy">
-          <h3> falcon heavy</h3>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry standard dummy text ever
-          since the 1500s,
-          <br />
-          when an unknown printer took a galley of type and scrambled it to make
-          a type specimen book. It has survived not only five centuries, but
-          also the leap into electronic typesetting,
-          <br />
-          remaining essentially unchanged
-          {val}
-          <br />
-          <button type="button">Reserve</button>
+      <div className="rocket-item__info">
+        <h2 className="rocket-item__name">{rocket_name}</h2>
+        <p className="rocket-item__description">
+          <span className="status">{reserved ? 'Reserved' : ''}</span>
+          {description}
         </p>
-        {/* <div className="button-type"></div> */}
+        <div>
+          <button
+            className="rocket-item__reserve-btn"
+            disabled={reserved}
+            onClick={() => console.log('reserve')}
+            type="button"
+          >
+            {reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
+          </button>
+        </div>
       </div>
     </div>
   );
+};
+
+Rocket.propTypes = {
+  rocket: PropTypes.shape({
+    rocket_id: PropTypes.number,
+    rocket_name: PropTypes.string,
+    description: PropTypes.string,
+    reserved: PropTypes.bool,
+    flickr_images: PropTypes.string,
+  }).isRequired,
 };
 
 export default Rocket;
