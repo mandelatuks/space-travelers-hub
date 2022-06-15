@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { FetchMissions } from '../../Redux/Mission/Mission';
+import { useDispatch, useSelector, shallowEqual } from 'react-redux';
+import { FetchMissions, selectMission } from '../../Redux/Mission/Mission';
 import Mission from '../Mission';
 
 const MissionPage = () => {
-  const missions = useSelector((state) => state.missionsReducer);
+  const missions = useSelector(selectMission, shallowEqual);
   const dispatch = useDispatch();
 
   useEffect(() => {
