@@ -12,8 +12,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<RocketPage />} />
-        <Route exact path="MissionPage" element={<MissionPage />} />
-        <Route exact path="ProfilePage" element={<ProfilePage />} />
+        <Route exact path="mission" element={<MissionPage />} />
+        <Route exact path="my-profile" element={<ProfilePage />} />
       </Routes>
     </main>
   );

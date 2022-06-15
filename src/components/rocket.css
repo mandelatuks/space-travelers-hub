@@ -1,0 +1,43 @@
+.rocket-detail {
+  padding-top: 2%;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.image-detail {
+  width: 300px;
+}
+
+h3 {
+  font-size: 1px;
+  font-weight: bold;
+}
+
+.detail1 {
+  display: flex;
+  gap: 20px;
+}
+
+.detail2 {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.button-type {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  width: 20%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: #007bff;
+  border-radius: 4px;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 20px;
+}
