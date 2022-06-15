@@ -11,10 +11,9 @@ const MissionPage = () => {
     dispatch(FetchMissions());
   }, [dispatch]);
 
-    return (
-      <Mission missions={missions} />
-    );
-}
+  return (
+    <Mission missions={missions} />
+  );
+};
 
 export default MissionPage;
-
