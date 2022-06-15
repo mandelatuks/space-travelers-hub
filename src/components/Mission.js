@@ -27,7 +27,22 @@ const Mission = (props) => {
             <tr key={mission.mission_id}>
               <td><h4>{mission.mission_name}</h4></td>
               <td><h4>{mission.description}</h4></td>
-              <td><h4 className="member">Not a Member</h4></td>
+              <td>
+                {!mission.reserved && (
+                <h4
+                  className="non-member"
+                >
+                  Not a Member
+                </h4>
+                )}
+                {mission.reserved && (
+                <h4
+                  className="member"
+                >
+                  Active Member
+                </h4>
+                )}
+              </td>
               <td>
                 {!mission.reserved && (
                 <button
