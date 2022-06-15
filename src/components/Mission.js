@@ -32,7 +32,11 @@ class Mission extends React.PureComponent {
 }
 
 Mission.propTypes = {
-  missions: PropTypes.string.isRequired,
+  missions: PropTypes.arrayOf({
+    mission_id: PropTypes.number,
+    mission_name: PropTypes.string,
+    description: PropTypes.string,
+  }).isRequired,
 };
 
 export default Mission;
