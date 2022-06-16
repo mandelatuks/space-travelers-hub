@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test the MissionPage snapshot 1`] = `
+<header>
+  <h1>
+    <img
+      alt="logo"
+      className="app-logo"
+      src="logo.png"
+    />
+     
+    Space Traveler's Hub
+  </h1>
+  <nav
+    className="navBar"
+  >
+    <ul>
+      <li>
+        <a
+          aria-current="page"
+          className="active"
+          href="/"
+          onClick={[Function]}
+        >
+          Rockets
+        </a>
+      </li>
+      <li>
+        <a
+          className=""
+          href="/mission"
+          onClick={[Function]}
+        >
+          Missions
+        </a>
+      </li>
+      <li>
+        |
+      </li>
+      <li>
+        <a
+          className=""
+          href="/my-profile"
+          onClick={[Function]}
+        >
+          My Profile
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+`;

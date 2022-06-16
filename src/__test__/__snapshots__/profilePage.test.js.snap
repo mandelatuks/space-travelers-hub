@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test the MissionPage snapshot 1`] = `
+<section
+  className="profile-page"
+>
+  <div>
+    <h1>
+       My Missions
+    </h1>
+    <ul />
+  </div>
+  <div>
+    <h1>
+      My Rockets
+    </h1>
+    <ul />
+  </div>
+</section>
+`;
