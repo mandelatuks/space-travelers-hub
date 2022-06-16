@@ -21,6 +21,17 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Install
+
+**Clone the repository**
+```
+git clone https://github.com/mandelatuks/bookstore-website.git
+```
+**Install NPM packages**
+```
+npm install
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
