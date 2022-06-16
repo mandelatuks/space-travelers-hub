@@ -1,18 +1,12 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
 import RocketPage from './components/pages/RocketPage';
 import MissionPage from './components/pages/MissionPage';
 import ProfilePage from './components/pages/ProfilePage';
 import Navbar from './components/pages/Navbar';
-import { fetchRockets } from './Redux/Rocket/rockets';
 import './App.css';
 
 function App() {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchRockets());
-  }, [dispatch]);
   return (
     <main>
       <Navbar />
