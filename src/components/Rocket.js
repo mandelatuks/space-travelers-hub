@@ -27,7 +27,7 @@ const Rocket = ({ rocket }) => {
           <button
             type="button"
             className={
-              reserved === true ? 'disabled' : 'rocket-item__reserve-btn'
+              reserved === true ? 'disabled' : 'reserve-btn'
             }
             onClick={() => (reserved
               ? dispatch(cancelReservation(rocket_id))
