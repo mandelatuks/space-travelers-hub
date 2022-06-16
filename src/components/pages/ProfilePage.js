@@ -22,7 +22,7 @@ function ProfilePage() {
         <h1>My Rockets</h1>
         <ul>
           {rocketReserved.map((rocket) => (
-            <li key={rocket.rocket_id}>{rocket.rocket_name}</li>
+            <li className="reserverock" key={rocket.rocket_id}>{rocket.rocket_name}</li>
           ))}
         </ul>
       </div>
