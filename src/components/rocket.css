@@ -1,24 +1,24 @@
 .rocket-detail {
   width: 90vw;
-   display: flex;
+  display: flex;
   margin: 0 auto;
   margin-top: 15px;
 }
 
-.detail-image img  {
-   width: 300px;
-   height: 100%;
+.detail-image img {
+  width: 300px;
+  height: 100%;
 }
 
-h2{
-   font-size: 25px;
+h2 {
+  font-size: 25px;
   font-weight: bold;
 }
 
 .rocket-description {
   word-wrap: break-word;
   line-height: 25px;
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .rocket-info {
