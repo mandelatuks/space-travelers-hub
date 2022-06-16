@@ -1,29 +1,37 @@
 /* eslint-disable camelcase */
 import React from 'react';
 import PropTypes from 'prop-types';
-// import './rocket.css';
+import { useDispatch } from 'react-redux';
+import { reserveRocket, cancelReservation } from '../Redux/Rocket/rockets';
+import './rocket.css';
 
 const Rocket = ({ rocket }) => {
   const {
-    rocket_name, description, flickr_images, reserved,
+    rocket_id, rocket_name, description, flickr_images, reserved,
   } = rocket;
+  const dispatch = useDispatch();
   return (
-    <div className="rocket-item">
-      <div className="rocket-item__image">
+    <div className="rocket-detail">
+      <div className="detail-image">
         <img src={flickr_images} alt={rocket_name} />
       </div>
-      <div className="rocket-item__info">
-        <h2 className="rocket-item__name">{rocket_name}</h2>
-        <p className="rocket-item__description">
-          <span className="status">{reserved ? 'Reserved' : ''}</span>
+      <div className="rocket-info">
+        <h2 className="rocket-name">{rocket_name}</h2>
+        <p className="rocket-description">
+          <span className={reserved ? 'status' : ' '}>
+            {reserved ? 'Reserved' : ''}
+          </span>
           {description}
         </p>
         <div>
           <button
-            className="rocket-item__reserve-btn"
-            disabled={reserved}
-            onClick={() => console.log('reserve')}
             type="button"
+            className={
+              reserved === true ? 'disabled' : 'reserve-btn'
+            }
+            onClick={() => (reserved
+              ? dispatch(cancelReservation(rocket_id))
+              : dispatch(reserveRocket(rocket_id)))}
           >
             {reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
           </button>
