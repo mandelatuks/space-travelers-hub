@@ -3,6 +3,8 @@
 # SPACE TRAVELER'S HUB
 
 > This applciation keeps track of the mission and rockets. It also gives users the best user experience. 
+> <img width="1181" alt="space-travelers__rockets" src="https://user-images.githubusercontent.com/38649067/174128760-b9a8b477-0067-46ac-beb1-2e4621bd330c.png">
+
 
 
 ## Built With
@@ -40,6 +42,12 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 >- GitHub: [@V0pe](https://github.com/V0pe)
 >- Twitter: [@de_vope_](https://twitter.com/de_vope)
 >- LinkedIn: [Victor Damola](https://linkedin.com/in/victor-damola-aderibigbe-27931ab0)
+
+👤 **Mandela Tumukunde**
+
+- GitHub: [@mandelatuks](https://github.com/mandelatuks)
+- Twitter: [@MandelaTm1](https://twitter.com/MandelaTm1)
+- LinkedIn: [@Mandela Tumukunde](https://www.linkedin.com/in/mandela-tumukunde-794755194/)
 
 ## 🤝 Contributing
 
