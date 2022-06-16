@@ -8,9 +8,9 @@ import Mission from '../MissionPage';
 test('test the MissionPage snapshot', () => {
   const missionRenderer = renderer.create(
     <Provider store={store}>
-     <BrowserRouter>
-      
-      <Mission />
+      <BrowserRouter>
+
+        <Mission />
       </BrowserRouter>
     </Provider>
     ,

@@ -9,8 +9,8 @@ import '@testing-library/jest-dom/extend-expect';
 test('test the MissionPage snapshot', () => {
   const missionRenderer = renderer.create(
     <Provider store={store}>
-    <BrowserRouter>
-      <Nav />
+      <BrowserRouter>
+        <Nav />
       </BrowserRouter>
     </Provider>
     ,
