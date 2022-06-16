@@ -5,7 +5,11 @@
 > This applciation keeps track of the mission and rockets. It also gives users the best user experience. 
 > <img width="1181" alt="space-travelers__rockets" src="https://user-images.githubusercontent.com/38649067/174128760-b9a8b477-0067-46ac-beb1-2e4621bd330c.png">
 
+## Link to Documenttion
+[Video documentation](https://drive.google.com/file/d/14z51_5VFb5iSNBfp6DlZtNJo6M-y1UV8/view?usp=sharing)
 
+## live link 
+[live website](https://delightful-stardust-098730.netlify.app)
 
 ## Built With
 
@@ -16,6 +20,17 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### Install
+
+**Clone the repository**
+```
+git clone https://github.com/mandelatuks/bookstore-website.git
+```
+**Install NPM packages**
+```
+npm install
+```
 
 ## Available Scripts
 
