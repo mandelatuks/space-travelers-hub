@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+  --primary: #0290ff;
+  --secondary: rgba(221, 221, 221, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  padding: 2% 5%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid grey;
+}
+
+.app-logo {
+  width: 4vw;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 1.5em;
+}
+
+header h1 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.profile-page {
+  display: flex;
+  gap: 30rem;
+  justify-content: center;
+  padding: 2%;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 2px solid #ddd;
+  text-align: left;
+  padding: 8px;
+  overflow: hidden;
+}
+
+td {
+  padding-bottom: 2rem;
+  font-weight: 300;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: var(--secondary);
+}
+
+td:nth-child(2) {
+  width: auto;
+}
+
+td:nth-child(1),
+td:nth-child(3),
+td:nth-child(4) {
+  width: 9rem;
+}
+
+.missiontable {
+  display: flex;
+  width: 98%;
+  padding: 2%;
+}
+
+.join-btn {
+  border: 1px solid grey;
+  background-color: transparent;
+  color: grey;
+  font-weight: bold;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  border: 1px solid rgb(255, 122, 135);
+  background-color: transparent;
+  color: rgb(255, 122, 135);
+  font-weight: bold;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.non-member {
+  background-color: grey;
+  color: white;
+  padding: 0;
+  border-radius: 4px;
+}
+
+.member {
+  background-color: hsl(180deg 53% 39%);
+  color: white;
+  padding: 0;
+  border-radius: 4px;
+}
+
+.profile-page ul {
+  margin-top: 1rem;
+}
+
+.profile-page ul li {
+  border: 1px solid black;
+  padding: 5%;
+}

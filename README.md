@@ -1,75 +1,79 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# SPACE TRAVELER'S HUB
 
-> One paragraph statement about the project.
+> This applciation keeps track of the mission and rockets. It also gives users the best user experience. 
+> <img width="1181" alt="space-travelers__rockets" src="https://user-images.githubusercontent.com/38649067/174128760-b9a8b477-0067-46ac-beb1-2e4621bd330c.png">
 
-![screenshot](./app_screenshot.png)
+## Link to Documenttion
+[Video documentation](https://drive.google.com/file/d/14z51_5VFb5iSNBfp6DlZtNJo6M-y1UV8/view?usp=sharing)
 
-Additional description about the project and its features.
+## live link 
+[live website](https://delightful-stardust-098730.netlify.app)
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Javascript, HTML, CSS
+- React
+- Redux
 
-## Live Demo
+# Getting Started with Create React App
 
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### Install
 
-### Usage
+**Clone the repository**
+```
+git clone https://github.com/mandelatuks/bookstore-website.git
+```
+**Install NPM packages**
+```
+npm install
+```
 
-### Run tests
+## Available Scripts
 
-### Deployment
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 
+## Author
 
-## Authors
+👤 **Victor Damola**
 
-👤 **Author1**
+>- GitHub: [@V0pe](https://github.com/V0pe)
+>- Twitter: [@de_vope_](https://twitter.com/de_vope)
+>- LinkedIn: [Victor Damola](https://linkedin.com/in/victor-damola-aderibigbe-27931ab0)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Mandela Tumukunde**
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@mandelatuks](https://github.com/mandelatuks)
+- Twitter: [@MandelaTm1](https://twitter.com/MandelaTm1)
+- LinkedIn: [@Mandela Tumukunde](https://www.linkedin.com/in/mandela-tumukunde-794755194/)
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
+>Contributions, issues, and feature requests are welcome!
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+>Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+## Acknowledgement
+>Greatful to @microverseinc for putting this project together
 
 ## 📝 License
 

@@ -1,0 +1,65 @@
+.rocket-detail {
+  width: 90vw;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.detail-image img {
+  width: 300px;
+  height: 100%;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.rocket-description {
+  word-wrap: break-word;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+.rocket-info {
+  font-size: 1.3em;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 30px 20px;
+  justify-content: flex-start;
+}
+
+.reserve-btn {
+  padding: 10px 15px;
+  outline: none;
+  border: none;
+  background-color: #007bff;
+  border-radius: 4px;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+.status {
+  font-size: 15px;
+  margin-bottom: 10px;
+  background-color: #5151fe;
+  color: #fff;
+  padding: 0 6px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid  #5151fe;
+}
+
+.disabled {
+  padding: 10px 15px;
+  border: 1px solid #545454;
+  border-radius: 5px;
+  color: #545454;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 17px;
+}
